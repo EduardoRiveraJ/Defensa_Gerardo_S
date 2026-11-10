@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Defensa · Mercado de mega yates en el Caribe · J. G. Sánchez Alcalá</title>
 <meta name="description" content="Estudio estratégico del mercado de mega yates en el Caribe: oportunidad y capacidades de Venezuela para el desarrollo de una oferta marítima competitiva. Universidad Marítima del Caribe, 2026.">
+<link rel="preload" as="image" href="img/01-portada.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
@@ -183,9 +184,9 @@ canvas.ocean{position:absolute;left:0;bottom:0;width:1600px;pointer-events:none;
 .enter canvas.ocean{animation:rvFade 2.4s var(--ease-soft) backwards;animation-delay:calc(var(--base) + .3s)}
 
 /* ---------- 01 Portada ---------- */
-.cover .cover-img{position:absolute;top:0;right:0;bottom:0;width:980px;border:0;
+.cover .cover-img{position:absolute;top:0;right:0;bottom:0;width:1080px;border:0;
   -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 34%);mask-image:linear-gradient(90deg,transparent 0%,#000 34%)}
-.cover .cover-img .ph-lab{padding-left:320px}
+.cover .cover-img .ph-lab{padding-left:420px}
 .enter .cover .cover-img,.cover.enter .cover-img{animation:rvFade 2.2s var(--ease-soft) backwards;animation-delay:calc(var(--base) + .2s)}
 .cover .veil{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(9,42,82,.96) 0%,rgba(9,42,82,.88) 38%,rgba(9,42,82,.2) 70%,rgba(9,42,82,.05) 100%),linear-gradient(0deg,rgba(7,30,59,.75),rgba(7,30,59,0) 34%)}
 .cover .compass-card{width:1100px;height:1100px;left:-560px;top:-120px;opacity:.26}
@@ -251,7 +252,7 @@ canvas.ocean{position:absolute;left:0;bottom:0;width:1600px;pointer-events:none;
 .th p b{display:block;font-family:var(--f-caps);font-weight:500;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin-bottom:6px}
 .funnel{position:relative;height:190px;margin-top:auto}
 .funnel svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
-.funnel .pill{position:absolute;left:50%;bottom:0;transform:translateX(-50%);background:var(--navy);color:var(--ivory);padding:18px 42px;font-family:var(--f-caps);font-size:20px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;border:1px solid var(--gold)}
+.funnel .pill{position:absolute;left:0;right:0;margin:0 auto;width:max-content;bottom:0;background:var(--navy);color:var(--ivory);padding:18px 42px;font-family:var(--f-caps);font-size:20px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;border:1px solid var(--gold)}
 .funnel .pill::after{content:"";position:absolute;inset:-1px;animation:breathe 4.5s ease-in-out infinite}
 
 /* ---------- 05 Metodología ---------- */
@@ -370,7 +371,8 @@ canvas.ocean{position:absolute;left:0;bottom:0;width:1600px;pointer-events:none;
 .decree p{margin:0;font-size:20px;line-height:1.45;color:var(--mist)}
 .arts{display:flex;gap:10px;flex-wrap:wrap}
 .arts span{border:1px solid var(--hair-navy);padding:8px 14px;font-family:var(--f-caps);font-size:16px;letter-spacing:.1em;color:var(--gold-light)}
-.decree .seal{margin-top:8px}
+.decree .ph{flex:1;min-height:170px;margin-top:6px}
+.decree .ph.loaded{border-bottom:2px solid var(--gold)}
 .prog{display:flex;flex-direction:column;position:relative}
 .ps{position:relative}
 .ps.l::before{content:"";position:absolute;left:31px;top:84px;bottom:-22px;width:1px;background:var(--gold);transform-origin:top}
@@ -617,7 +619,7 @@ body.presenter{overflow:auto}
 
 <!-- 01 · PORTADA -->
 <section class="slide navy cover" data-src="">
-  <figure class="ph cover-img" data-img="img/01-portada.jpg" data-default="cover" data-hint="Mega yate al atardecer (imagen actual de la portada)"></figure>
+  <figure class="ph cover-img" style="--pos:12% 50%" data-img="img/01-portada.jpg" data-hint="Imagen principal de portada"></figure>
   <div class="veil"></div>
   <div class="par" data-depth="14"><div class="cmp-intro"><svg class="compass-card" viewBox="0 0 1000 1000"></svg></div></div>
   <div class="cv-top rv rv-fade" style="--d:.2s">
@@ -822,7 +824,7 @@ body.presenter{overflow:auto}
         <div class="seal">Decreto 1.445<small>Año 2014</small></div>
         <p>Distingue categorías y operaciones. El estudio analiza sus artículos:</p>
         <div class="arts" data-stagger=".9,.1"><span class="rv rv-pop">Art. 5</span><span class="rv rv-pop">Art. 6</span><span class="rv rv-pop">Art. 38</span><span class="rv rv-pop">Art. 39</span></div>
-        <div class="caveat rv rv-up" style="--d:1.4s;margin-top:auto;font-size:18.5px"><svg><use href="#i-info"/></svg><span>Las exigencias de buques mercantes no se generalizan a todo yate privado.</span></div>
+        <figure class="ph rv rv-fade" style="--d:1.3s;--pos:22% 62%" data-img="img/10-regulatorio.jpg" data-hint="Decreto 1.445 · imagen ilustrativa"></figure>
       </div>
       <div class="prog" data-stagger=".5,.25">
         <div class="ps l rv rv-up"><span class="dot"><svg><use href="#i-check"/></svg></span><div><h3>Hallazgo documental</h3><p>El Decreto 1.445 (2014) distingue categorías y operaciones; el estudio analiza los artículos 5, 6, 38 y 39.</p></div><span class="tag">Identificado</span></div>
@@ -979,7 +981,7 @@ const IMG_DEFAULTS={cover:"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2w
 const TOTAL_MIN=30;
 const DATA=[
  {eb:"Portada",t:"Estudio estratégico del mercado de mega yates en el Caribe",min:1,
-  n:["Saludar al jurado y al tutor, Jefe/Máq. MSc. Ernesto Villasmil F. Presentar título, autor y tutor.","Una frase de encuadre: el estudio aborda la inserción competitiva de Venezuela en el segmento de mega yates desde un diagnóstico documental.","Imagen de portada: ilustración conceptual generada con IA, sin atribución a una marina real (aclararlo si preguntan)."],
+  n:["Saludar al jurado y al tutor, Jefe/Máq. MSc. Ernesto Villasmil F. Presentar título, autor y tutor.","Una frase de encuadre: el estudio aborda la inserción competitiva de Venezuela en el segmento de mega yates desde un diagnóstico documental.","Imagen de portada: ilustración conceptual, sin atribución a una marina real (aclararlo si preguntan)."],
   src:"Sánchez Alcalá, J. G. (2026). Trabajo definitivo revisado 6-11-26, portada."},
  {eb:"Planteamiento",t:"El problema de investigación",min:2,
   n:["El segmento exige compatibilidad de acceso, atraque, soporte técnico y servicios: no basta con tener una marina.","En Venezuela la oferta publicada es dispersa y no permite establecer una capacidad integral comparable.","La pregunta mostrada sintetiza las interrogantes del planteamiento.","Idea fuerza: la oportunidad comercial necesita evidencia técnica e institucional verificable."],
@@ -1006,7 +1008,7 @@ const DATA=[
   n:["Anzoátegui y Nueva Esparta: oferta específica identificada; candidatos a ampliar verificación.","La Guaira: ficha técnica insuficiente en el corpus; compatibilidad no evaluable.","Los Roques: condición de parque nacional; requiere evaluación ambiental diferenciada.","La Tortuga: promoción de excursiones; infraestructura para mega yates no acreditada.","No se establece superioridad técnica entre Anzoátegui y Nueva Esparta ni se demuestra que sean las mejores zonas del país. El estado de la evidencia no equivale a ausencia de servicios.","El mapa es un esquema de ubicación, no una carta náutica."],
   src:"Lectura territorial del estudio, p. 76."},
  {eb:"Marco institucional",t:"Condiciones regulatorias e institucionales",min:2,
-  n:["Hallazgo: el Decreto 1.445 (2014) distingue categorías y operaciones; se analizaron los artículos 5, 6, 38 y 39.","La lectura comparativa de procedimientos y herramientas digitales regionales permitió definir dimensiones de contraste.","Queda sin resolver la aplicación aduanera y fiscal por operación, y los tiempos y costos efectivos.","Es el resultado de la revisión documental, no asesoría jurídica actualizada. El propio estudio aclara que no acredita una revisión exhaustiva de reformas o instrucciones de 2026.","Evitar generalizar exigencias de buques mercantes a todo yate privado."],
+  n:["Hallazgo: el Decreto 1.445 (2014) distingue categorías y operaciones; se analizaron los artículos 5, 6, 38 y 39.","La lectura comparativa de procedimientos y herramientas digitales regionales permitió definir dimensiones de contraste.","Queda sin resolver la aplicación aduanera y fiscal por operación, y los tiempos y costos efectivos.","Es el resultado de la revisión documental, no asesoría jurídica actualizada. El propio estudio aclara que no acredita una revisión exhaustiva de reformas o instrucciones de 2026.","Evitar generalizar exigencias de buques mercantes a todo yate privado.","La imagen del decreto es ilustrativa; no reproduce el documento oficial."],
   src:"Análisis normativo y alcance del objetivo 3, p. 82."},
  {eb:"Síntesis",t:"Brechas prioritarias para la decisión",min:2.5,
   n:["Leer cada fila de izquierda a derecha: qué brecha, qué información falta, qué decisión condiciona.","Compatibilidad física → admisión segura y atraque. Capacidad técnica → reparación y mantenimiento. Ruta institucional → previsibilidad de la escala. Mercado → demanda capturable y viabilidad económica.","Las brechas sintetizan las restricciones de la evidencia. No se asignan puntuaciones sin parámetros homogéneos ni se convierten datos desconocidos en ceros.","Si preguntan qué haría falta verificar: abrir Anexos (tecla A), criterios mínimos de verificación."],
