@@ -1,24 +1,25 @@
 # Imágenes de la presentación
 
 Ya están cargadas las 11 fotos entregadas. Para cambiar una, reemplaza el archivo manteniendo el nombre.
-Guarda aquí las fotos con estos nombres exactos (JPG, idealmente 1600–2400 px de ancho).
 La presentación las detecta sola: si el archivo existe, reemplaza el recuadro guía; si no, se ve el recuadro.
 
-| Archivo | Lámina | Sugerencia |
+| Archivo | Lámina actual | Contenido |
 |---|---|---|
 | 01-portada.jpg | 01 Portada | Imagen principal (main) |
-| 02-problema.jpg | 02 Problema | Mega yate en aproximación a una marina del Caribe |
-| 06-resultado.jpg | 06 Resultado central | Vista aérea de marina con mega yates (va de fondo, oscurecida) |
-| 07-atraque.jpg | 07 Referencias regionales | Marina con mega yates atracados |
-| 07-varada.jpg | 07 Referencias regionales | Travel lift o dique flotante con yate |
-| 08-aqua-vi.jpg | 08 Venezuela | Marina Aqua Vi, Anzoátegui |
-| 08-venetur.jpg | 08 Venezuela | Instalación náutica Venetur, Nueva Esparta |
-| 12-oriente.jpg | 12 Oportunidades | Costa oriental (Puerto La Cruz / Anzoátegui) |
-| 12-insular.jpg | 12 Oportunidades | Margarita / ámbito insular |
-| 10-regulatorio.jpg | 10 Marco institucional | Decreto 1.445 (ilustrativa) |
-| 12-puerto-cabello.jpg | 12 Oportunidades | Puerto Cabello: astillero o zona industrial |
-| 15-cierre.jpg | 15 Cierre | Opcional: por defecto usa la foto de portada |
+| 02-problema.jpg | 03 Problema | Yate fondeado |
+| 10-regulatorio.jpg | 09 Marco legal | Ley de Marinas (ilustrativa) |
+| 06-resultado.jpg | 10 Resultado central | Vista aérea de marina (fondo) |
+| 07-atraque.jpg | 11 Mercado comparativo | Proa atracada |
+| 07-varada.jpg | 11 Mercado comparativo | Proa atracada |
+| 08-aqua-vi.jpg | 12 Oferta náutica publicada | Aqua Vi, Anzoátegui |
+| 08-venetur.jpg | 12 Oferta náutica publicada | Venetur, Nueva Esparta |
+| 12-oriente.jpg | 15 Oportunidades | Oriente |
+| 12-insular.jpg | 15 Oportunidades | Ámbito insular |
+| 12-puerto-cabello.jpg | 15 Oportunidades | Puerto Cabello |
+| 19-aporte.jpg | 19 Aporte del estudio | Opcional: por defecto usa el yate al atardecer (también en el índice) |
+
+Los nombres de archivo conservan la numeración original; la columna "Lámina actual" indica dónde aparece cada foto en la versión de 20 láminas.
 
 ## Atajos en vivo
 → / espacio: avanzar · ←: retroceder · N: notas y cronómetro · P: ventana del presentador
-A: anexos de respaldo · F: pantalla completa · R: repetir animación · T: reiniciar cronómetro · I: ocultar guías de imagen
+A: anexos de respaldo · Lámina 2: cada línea del índice salta a su sección · F: pantalla completa · R: repetir animación · T: reiniciar cronómetro · I: ocultar guías de imagen
