@@ -21,6 +21,6 @@ La presentación las detecta sola: si el archivo existe, reemplaza el recuadro g
 Los nombres de archivo conservan la numeración original; la columna "Lámina actual" indica dónde aparece cada foto en la versión de 21 láminas.
 
 ## Atajos en vivo
-Al abrir el enlace aparece la pantalla de espera con el logo: → / espacio / clic para empezar · B: volver a la espera en cualquier momento
+Al abrir el enlace (computadora o teléfono) aparece la pantalla de espera con el logo: → / espacio / clic / toque para empezar · B: volver a la espera · Para omitirla, añade ?sinespera al enlace
 → / espacio: avanzar · ←: retroceder · N: notas y cronómetro · P: ventana del presentador
 A: anexos de respaldo · Lámina 2: cada línea del índice salta a su sección · F: pantalla completa · R: repetir animación · T: reiniciar cronómetro · I: ocultar guías de imagen

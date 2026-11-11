@@ -732,7 +732,10 @@ canvas.ocean{position:absolute;left:0;bottom:0;width:1600px;pointer-events:none;
 .navy .gr{padding-top:30px;padding-bottom:30px}
 
 /* ---------- 00 Pantalla de espera ---------- */
-.standby{position:absolute;inset:0;z-index:40;cursor:pointer;overflow:hidden;color:var(--ivory);
+body.standby-on{background:#061C38}
+body.standby-on .stage-wrap{box-shadow:none}
+body.standby-on .rotate-hint{display:none}
+.standby{position:absolute;inset:-3px;z-index:40;cursor:pointer;overflow:hidden;color:var(--ivory);
   background:radial-gradient(900px 640px at 50% 44%,#123E70 0%,#0A2B53 55%,#061C38 100%)}
 body.standby-on .toolbar,body.standby-on .progress,body.standby-on .notes{opacity:0;pointer-events:none}
 .standby .sb-canvas{position:absolute;inset:0;width:1600px;height:900px}
@@ -1663,7 +1666,7 @@ const DATA=[
   });
   let tx=null,ty=null;
   app.addEventListener('touchstart',e=>{const t=e.touches[0];tx=t.clientX;ty=t.clientY;},{passive:true});
-  app.addEventListener('touchend',e=>{if(tx===null)return;const t=e.changedTouches[0];const dx=t.clientX-tx,dy=t.clientY-ty;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){dx<0?next():prev();}tx=null;},{passive:true});
+  app.addEventListener('touchend',e=>{if(tx===null)return;if(sbOn){tx=null;startShow();return;}const t=e.changedTouches[0];const dx=t.clientX-tx,dy=t.clientY-ty;if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)){dx<0?next():prev();}tx=null;},{passive:true});
   let idleT; const wake=()=>{document.body.classList.remove('idle');clearTimeout(idleT);idleT=setTimeout(()=>document.body.classList.add('idle'),2600);};
   document.addEventListener('mousemove',wake);
 
@@ -1712,7 +1715,7 @@ const DATA=[
     draw(); return;
   }
 
-  // ---- Pantalla de espera (lámina 0): visible al abrir sin #sN; → / espacio / clic para comenzar; B para volver a ella
+  // ---- Pantalla de espera (lámina 0): visible siempre al abrir (también en móvil y con #sN; ?sinespera la omite); → / espacio / clic para comenzar; B para volver a ella
   const sb=$('standby'), sbc=$('sbCanvas'), sbx=sbc.getContext('2d');
   let sbOn=false, sbR=1;
   const sbP=Array.from({length:42},(_,k)=>({x:Math.random()*1600,y:Math.random()*900,v:.08+Math.random()*.22,a:.08+Math.random()*.32,r:.7+Math.random()*1.6,ph:Math.random()*6.28}));
@@ -1742,7 +1745,7 @@ const DATA=[
 
   // ---- Inicio
   const m=/^#s(\d+)$/.exec(location.hash||''); if(m) cur=Math.min(N,Math.max(1,+m[1]))-1;
-  const wantStandby=!m;
+  const wantStandby=!/[?&](sinespera|nostandby)\b/.test(location.search);
   document.body.classList.add('first');
   slides[cur].classList.add('active');
   fit(); ui(); play(slides[cur]);
