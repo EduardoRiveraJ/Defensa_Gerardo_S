@@ -241,12 +241,12 @@ canvas.ocean{position:absolute;left:0;bottom:0;width:1600px;pointer-events:none;
 .oe p{margin:0;font-size:18.5px;line-height:1.5;color:var(--mist)}
 
 /* ---------- 04 Bases teóricas ---------- */
-.th{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.th{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
 .th>div{background:var(--paper);border:1px solid var(--hair-ivory);padding:28px 26px 30px;display:flex;flex-direction:column;gap:14px;position:relative}
 .th>div::after{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:3px;background:var(--gold-ink)}
 .th .ico{width:58px;height:58px;color:var(--gold-ink)}
 .th .ico svg{width:58px;height:58px}
-.th .who{font-family:var(--f-caps);font-size:14px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-ink)}
+.th .who{font-family:var(--f-caps);font-weight:600;font-size:18px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold-ink);white-space:nowrap}
 .th h3{margin:0;font-family:var(--f-display);font-weight:600;font-size:33px;line-height:1.05;min-height:70px}
 .th p{margin:0;font-size:21px;line-height:1.45;color:var(--ink-soft)}
 .th p b{display:block;font-family:var(--f-caps);font-weight:500;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);margin-bottom:6px}
@@ -1147,7 +1147,7 @@ body.presenter{overflow:auto}
 <!-- 16 · ALCANCE -->
 <section class="slide navy" data-src="Síntesis de la evidencia reportada en los resultados, pp. 62–88">
   <div class="s-inner">
-    <div class="head"><p class="eyebrow">Evaluación del alcance</p><h2 class="t">Alcance alcanzado de los objetivos</h2></div>
+    <div class="head"><h2 class="t">Evaluación del alcance</h2></div>
     <div class="ac">
       <div class="ach rv rv-fade" style="--d:.3s"><span>Objetivo</span><span><svg class="ok-i"><use href="#i-check"/></svg>Aporte alcanzado</span><span><svg class="pd-i"><use href="#i-open"/></svg>Aspecto pendiente</span></div>
       <div data-stagger=".45,.16">
@@ -1323,7 +1323,7 @@ const DATA=[
  {eb:"Interpretación",t:"Oportunidades estratégicas por desarrollar",min:1.5,
   n:["Oriente: servicios de tránsito y apoyo logístico, sujetos a verificar accesos y capacidad de las instalaciones.","Ámbito insular: servicios turísticos y abastecimiento, sujetos a compatibilidad técnica, ambiental y regulatoria.","Puerto Cabello: adaptación industrial al refit de yates, con estándares y operación especializada; exige ficha técnica comparable."],
   src:"Interpretación y recomendaciones del trabajo, pp. 83–92."},
- {eb:"Evaluación del alcance",t:"Alcance alcanzado de los objetivos",min:1.5,
+ {eb:"Resultados",t:"Evaluación del alcance",min:1.5,
   n:["Para cada objetivo: qué aportó el estudio y qué queda pendiente.","El trabajo declara parciales los objetivos 2 y 3; explicar qué información completaría cada uno."],
   src:"Síntesis de la evidencia reportada en los resultados, pp. 62–88."},
  {eb:"Cierre del análisis",t:"Conclusiones",min:2.5,
