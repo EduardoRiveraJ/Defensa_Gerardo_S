@@ -7,7 +7,7 @@ La presentación las detecta sola: si el archivo existe, reemplaza el recuadro g
 |---|---|---|
 | 01-portada.jpg | 01 Portada | Imagen principal (main) |
 | 02-problema.jpg | 03 Problema | Yate fondeado |
-| 10-regulatorio.jpg | 09 Marco legal | Ley de Marinas (ilustrativa) |
+| 10-regulatorio.jpg | 07 Marco legal | Ley de Marinas (ilustrativa) |
 | 06-resultado.jpg | 10 Resultado central | Vista aérea de marina (fondo) |
 | 07-atraque.jpg | 11 Mercado comparativo | Proa atracada |
 | 07-varada.jpg | 11 Mercado comparativo | Proa atracada |
@@ -16,10 +16,11 @@ La presentación las detecta sola: si el archivo existe, reemplaza el recuadro g
 | 12-oriente.jpg | 15 Oportunidades | Oriente |
 | 12-insular.jpg | 15 Oportunidades | Ámbito insular |
 | 12-puerto-cabello.jpg | 15 Oportunidades | Puerto Cabello |
-| 19-aporte.jpg | 19 Aporte del estudio | Opcional: por defecto usa el yate al atardecer (también en el índice) |
+| 19-aporte.jpg | 20 Aporte del estudio | Opcional: por defecto usa el yate al atardecer (también en el índice) |
 
-Los nombres de archivo conservan la numeración original; la columna "Lámina actual" indica dónde aparece cada foto en la versión de 20 láminas.
+Los nombres de archivo conservan la numeración original; la columna "Lámina actual" indica dónde aparece cada foto en la versión de 21 láminas.
 
 ## Atajos en vivo
+Al abrir el enlace aparece la pantalla de espera con el logo: → / espacio / clic para empezar · B: volver a la espera en cualquier momento
 → / espacio: avanzar · ←: retroceder · N: notas y cronómetro · P: ventana del presentador
 A: anexos de respaldo · Lámina 2: cada línea del índice salta a su sección · F: pantalla completa · R: repetir animación · T: reiniciar cronómetro · I: ocultar guías de imagen
